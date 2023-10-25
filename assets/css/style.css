@@ -45,6 +45,10 @@ b {
     margin-bottom: 0;
 }
 
+.h7, h7 {
+    font-size: 1.15rem;
+}
+
 .text-small {
     font-size: 0.85rem;
 }
