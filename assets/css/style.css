@@ -22,31 +22,34 @@ b {
 
 .h1, h1 {
     font-size: 2.1rem;
-    margin-bottom: 0;
 }
 
 .h2, h2 {
     font-size: 1.8rem;
-    margin-bottom: 0;
 }
 
 .h3, h3 {
     font-size: 1.6rem;
-    margin-bottom: 0;
 }
 
 .h4, h4 {
     font-size: 1.3rem;
-    margin-bottom: 0;
 }
 
 .h5, h5 {
     font-size: 1.15rem;
-    margin-bottom: 0;
+}
+
+.h6, h6 {
+    font-size: 1rem;
 }
 
 .h7, h7 {
     font-size: 1.15rem;
+}
+
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+    margin-bottom: 0;
 }
 
 .text-small {
@@ -54,7 +57,7 @@ b {
 }
 
 .card {
-    border-radius: .5rem;
+    border-radius: .7rem;
 }
 
 #sidebar {
@@ -150,11 +153,15 @@ input {
 }
 
 .img-cart {
-    width: 40%;
+    max-width: 40%;
+    object-fit: cover;
+    width: 100%;
+    height: 50px;
+    border-radius: .75rem;
 }
 
 .img-list {
-    width: 15%;
+    width: 25%;
 }
 
 .img-fit {
@@ -165,11 +172,20 @@ input {
     border-radius: .5rem;
 }
 
-.img-fit-edit {
-    max-width: 25%;
+.img-product {
+    max-width: 12%;
+    width: 100%;
+    height: 50px;
     object-fit: cover;
+    border-radius: .65rem;
+}
+
+.img-product-option {
+    max-width: 22%;
     width: 100%;
     height: 300px;
+    object-fit: cover;
+    border-radius: .65rem;
 }
 
 .input-qty {
@@ -278,9 +294,9 @@ input[type=number] {
 }
 
 .table tr>*:nth-child(1) {
-    width: 30%;
+    width: 25%;
 }
 
-.table tr>*:nth-child(6) {
-    width: 12%;
+.text-green {
+    color: green;
 }
