@@ -11,6 +11,7 @@ body {
 }
 
 a, a:link {
+    cursor: pointer;
     text-decoration: none;
     color: #000;
 }
@@ -19,8 +20,29 @@ b {
     font-weight: 600;
 }
 
+.h1, h1 {
+    font-size: 2.1rem;
+    margin-bottom: 0;
+}
+
+.h2, h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.h3, h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.h4, h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
 .h5, h5 {
     font-size: 1.15rem;
+    margin-bottom: 0;
 }
 
 .text-small {
@@ -127,6 +149,10 @@ input {
     width: 40%;
 }
 
+.img-list {
+    width: 15%;
+}
+
 .img-fit {
     max-width: 20%;
     object-fit: cover;
@@ -135,7 +161,14 @@ input {
     border-radius: .5rem;
 }
 
-input[type=text] {
+.img-fit-edit {
+    max-width: 25%;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.input-qty {
     width: 20px;
     text-align: center;
     font-size: 16px;
@@ -195,4 +228,55 @@ a.item-table:hover {
 .px-7 {
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
+}
+
+.gridtable tbody {
+    display: block;
+    max-height: 75vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.gridtable thead, .gridtable tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.gridtable thead {
+    width: calc(100% - 1em);
+}
+
+.gridtable thead {
+    position: relative;
+}
+
+.form-control {
+    height: auto;
+    padding: .875rem .75rem;
+    border-radius: .5rem;
+}
+
+.rounded-frame {
+    border-radius: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.table tr>*:nth-child(1) {
+    width: 30%;
+}
+
+.table tr>*:nth-child(6) {
+    width: 12%;
 }
