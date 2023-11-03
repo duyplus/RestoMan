@@ -498,7 +498,7 @@ input[type=number] {
     }
 
     .cart {
-        height: 27vh;
+        height: 30vh;
         overflow-y: scroll;
         padding-bottom: 15px;
     }
@@ -532,7 +532,7 @@ input[type=number] {
     }
 
     .cart {
-        height: 27vh;
+        height: 30vh;
         overflow-y: scroll;
         padding-bottom: 15px;
     }
