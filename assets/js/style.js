@@ -19,3 +19,15 @@ function countItems() {
     }
 }
 countItems();
+
+$(document).ready(function () {
+    $('.items').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        prevArrow:
+            '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+        nextArrow:
+            '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>'
+    });
+});
