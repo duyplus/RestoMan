@@ -489,7 +489,7 @@ input[type=number] {
 /* For tablets */
 @media only screen and (max-width: 600px) {
     * {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
 
@@ -504,17 +504,17 @@ input[type=number] {
     }
 
     .input-qty {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .inc {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0px 5px;
         border-radius: .3rem;
     }
 
     .dec {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0px 5px;
         border-radius: .3rem;
     }
@@ -523,7 +523,7 @@ input[type=number] {
 /* For mobile */
 @media only screen and (max-width: 480px) {
     * {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
@@ -538,17 +538,17 @@ input[type=number] {
     }
 
     .input-qty {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
 
     .inc {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         padding: 0px 5px;
         border-radius: .3rem;
     }
 
     .dec {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         padding: 0px 5px;
         border-radius: .3rem;
     }
