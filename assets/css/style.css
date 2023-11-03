@@ -111,7 +111,7 @@ b {
 
 .bg-main, .btn-main {
     background-color: #f67f20;
-    color: #fff;
+    color: #fff !important;
 }
 
 .btn {
@@ -457,10 +457,35 @@ input[type=number] {
     padding-top: 2.8rem;
 }
 
-/* MOBILE */
-@media only screen and (max-width: 480px) {
+#content {
+    display: none;
+}
+
+.cart-num {
+    font-size: 0.7rem;
+    color: #fff;
+    background: #f67f20;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    height: 15px;
+    width: 15px;
+    border-radius: 60%;
+}
+
+.breadcrumb {
+    padding: 0;
+    background-color: inherit;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+}
+
+/* For tablets */
+@media only screen and (max-width: 600px) {
     * {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
 
@@ -468,8 +493,28 @@ input[type=number] {
         border-radius: 5px;
     }
 
-    .btn-main {
-        color: #fff !important;
+    .cart {
+        height: 40vh;
+        overflow-y: scroll;
+        padding-bottom: 15px;
+    }
+}
+
+/* For mobile */
+@media only screen and (max-width: 480px) {
+    * {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .rounded-br {
+        border-radius: 5px;
+    }
+
+    .cart {
+        height: 40vh;
+        overflow-y: scroll;
+        padding-bottom: 15px;
     }
 }
 

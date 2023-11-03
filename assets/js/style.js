@@ -31,3 +31,18 @@ $(document).ready(function () {
             '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>'
     });
 });
+
+$(document).ready(function () {
+    $("#more").click(function () {
+        var elem = $("#more").text();
+        if (elem == "Xem thêm") {
+            //Stuff to do when btn is in the read more state
+            $("#more").text("Rút gọn");
+            $("#content").slideDown();
+        } else {
+            //Stuff to do when btn is in the read less state
+            $("#more").text("Xem thêm");
+            $("#content").slideUp();
+        }
+    });
+});
