@@ -121,6 +121,7 @@ b {
 .btn {
     font-size: 0.95rem;
     border-radius: .5rem;
+    color: #fff !important;
 }
 
 .bg-main:hover, .btn-main:hover {
