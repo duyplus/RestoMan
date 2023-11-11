@@ -119,6 +119,164 @@
     transform: rotate(0deg);
 }
 
+@media only screen and (max-width: 1440px) {
+    .icon-home {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/home.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-home:hover {
+        background-image: url(../img/home-1.svg);
+    }
+
+    .icon-home.active {
+        background-image: url(../img/home-1.svg);
+    }
+
+    .icon-dashboard {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/dashboard.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-dashboard:hover {
+        background-image: url(../img/dashboard-1.svg);
+    }
+
+    .icon-dashboard.active {
+        background-image: url(../img/dashboard-1.svg);
+    }
+
+    .icon-order {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/order.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-order:hover {
+        background-image: url(../img/order-1.svg);
+    }
+
+    .icon-order.active {
+        background-image: url(../img/order-1.svg);
+    }
+
+    .icon-product {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/product.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-product:hover {
+        background-image: url(../img/product-1.svg);
+    }
+
+    .icon-product.active {
+        background-image: url(../img/product-1.svg);
+    }
+
+    .icon-notify {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/notify.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-notify:hover {
+        background-image: url(../img/notify-1.svg);
+    }
+
+    .icon-notify.active {
+        background-image: url(../img/notify-1.svg);
+    }
+
+    .icon-customers {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/customers.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-customers:hover {
+        background-image: url(../img/customers-1.svg);
+    }
+
+    .icon-customers.active {
+        background-image: url(../img/customers-1.svg);
+    }
+
+    .icon-message {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/message.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-message:hover {
+        background-image: url(../img/message-1.svg);
+    }
+
+    .icon-message.active {
+        background-image: url(../img/message-1.svg);
+    }
+
+    .icon-setting {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 0px;
+        left: 20px;
+        background-image: url(../img/setting.svg);
+        background-size: 100% 100%;
+    }
+
+    .icon-setting:hover {
+        background-image: url(../img/setting-1.svg);
+    }
+
+    .icon-setting.active {
+        background-image: url(../img/setting-1.svg);
+    }
+
+    .pt-6 {
+        padding-top: 2.5rem;
+    }
+
+    .order {
+        height: 70vh;
+    }
+
+    .order-detail {
+        height: 50.5vh;
+    }
+}
+
 /* For tablets */
 @media only screen and (max-width: 600px) {
     * {
@@ -158,6 +316,47 @@
     * {
         font-size: 0.85rem;
         font-weight: 500;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.3rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.2rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1.1rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: 1rem;
+    }
+
+    h7,
+    .h7 {
+        font-size: 1rem;
+    }
+
+    .img-order {
+        max-width: 15%;
+        object-fit: cover;
+        width: 100%;
+        height: 50px;
+        border-radius: .5rem;
+    }
+
+    .order-detail {
+        height: 40vh;
+    }
+
+    .order {
+        height: 60vh;
     }
 
     .rounded-br {
