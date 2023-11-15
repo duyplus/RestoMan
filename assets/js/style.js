@@ -20,6 +20,7 @@ function countItems() {
 }
 countItems();
 
+/// slick
 $(document).ready(function () {
     $('.items').slick({
         infinite: true,
@@ -32,6 +33,7 @@ $(document).ready(function () {
     });
 });
 
+/// show more product
 $(document).ready(function () {
     $("#more").click(function () {
         var elem = $("#more").text();
@@ -45,4 +47,24 @@ $(document).ready(function () {
             $("#content").slideUp();
         }
     });
+});
+
+/// order
+$(document).ready(function () {
+    $("#showmenu").click(function () {
+        if ($(window).width() <= 480) {
+            $('.menu').slideToggle("fast");
+            $('.nothing').addClass("d-none");
+            $('.orders').addClass("d-none");
+        } else if ($(window).width() <= 1440) {
+            $('.menu').slideToggle("fast");
+            $('.nothing').addClass("d-none");
+        }
+    });
+});
+
+/// sidebar menu
+$("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
 });
