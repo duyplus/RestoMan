@@ -578,12 +578,12 @@ input[type=number] {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #999999;
+    color: #6d6d6d;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #f67f20;
     background: rgba(255, 255, 255, 0.2);
 }
 
