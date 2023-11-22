@@ -120,6 +120,14 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .img-product {
+        max-width: 100%;
+        width: 100%;
+        height: 65px;
+        object-fit: cover;
+        border-radius: .65rem;
+    }
+
     .icon-home {
         position: absolute;
         width: 45px;
@@ -269,11 +277,126 @@
     }
 }
 
+@media (min-width: 768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 170px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 170px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
 /* For tablets */
 @media only screen and (max-width: 600px) {
     * {
         font-size: 0.9rem;
         font-weight: 500;
+    }
+
+    h1,
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.4rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.3rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.2rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: 1.1rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: 1rem;
+    }
+
+    h7,
+    .h7 {
+        font-size: 1rem;
+    }
+
+    .col-table {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .ntable {
+        height: 32vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 15px;
+    }
+
+    .gridtable tbody {
+        display: block;
+        max-height: 72vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .img-product {
+        max-width: 35%;
+        width: 100%;
+        height: 30px;
+        object-fit: cover;
+        border-radius: .65rem;
+    }
+
+    .img-product-option {
+        max-width: 40%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: .65rem;
+    }
+
+    .img-order {
+        max-width: 15%;
+        object-fit: cover;
+        width: 100%;
+        height: 50px;
+        border-radius: .5rem;
+    }
+
+    .order-detail {
+        height: 40vh;
+    }
+
+    .order {
+        height: 60vh;
     }
 
     .rounded-br {
@@ -301,6 +424,14 @@
         padding: 0px 5px;
         border-radius: .3rem;
     }
+
+    .img-fit {
+        max-width: 15%;
+        object-fit: cover;
+        width: 100%;
+        height: 50px;
+        border-radius: .5rem;
+    }
 }
 
 /* For mobile */
@@ -308,6 +439,16 @@
     * {
         font-size: 0.85rem;
         font-weight: 500;
+    }
+
+    h1,
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.4rem;
     }
 
     h3,
@@ -333,6 +474,42 @@
     h7,
     .h7 {
         font-size: 1rem;
+    }
+
+    .col-table {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .ntable {
+        height: 32vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 15px;
+    }
+
+    .gridtable tbody {
+        display: block;
+        max-height: 72vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .img-product {
+        max-width: 100%;
+        width: 100%;
+        height: 30px;
+        object-fit: cover;
+        border-radius: .65rem;
+    }
+
+    .img-product-option {
+        max-width: 40%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: .65rem;
     }
 
     .img-order {
@@ -375,5 +552,13 @@
         font-size: 0.85rem;
         padding: 0px 5px;
         border-radius: .3rem;
+    }
+
+    .img-fit {
+        max-width: 15%;
+        object-fit: cover;
+        width: 100%;
+        height: 50px;
+        border-radius: .5rem;
     }
 }

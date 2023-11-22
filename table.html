@@ -18,7 +18,81 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 p-0">
+            <div class="col-2 d-flex justify-content-center align-items-center d-block d-lg-none">
+                <a href="index_mb.html">
+                    <img src="assets/img/logo.svg" width="32">
+                </a>
+            </div>
+            <div class="col-7 mt-3 d-block d-lg-none">
+                <div class="input-group mb-4 border rounded-pill px-1">
+                    <input type="search" placeholder="Tìm kiếm?" class="form-control bg-none border-0"
+                        style="padding: .375rem .75rem;">
+                    <div class="input-group-append border-0">
+                        <button class="btn btn-link"><img src="assets/img/search.svg" width="15"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 mt-3 pl-0 d-block d-lg-none">
+                <a href="cart_mb.html">
+                    <img class="ml-2 float-left" src="assets/img/uil_cart.svg" />
+                    <div class="cart-num px-1 d-flex justify-content-center align-items-center">2</div>
+                </a>
+            </div>
+            <div class="col-1 d-flex align-items-center ml-n4 d-block d-lg-none">
+                <a id="menu-toggle" data-toggle="dropdown">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </a>
+                <div class="dropdown-menu d-none"></div>
+                <div id="wrapper">
+                    <div id="sidebar-wrapper" class="border-top-right">
+                        <ul class="sidebar-nav">
+                            <li class="h6">
+                                <a href="index_mb.html">
+                                    <i class="fa-solid fa-house pr-2 text-lightgrey"></i> Trang chủ
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="table.html">
+                                    <i class="fa-solid fa-clipboard pr-2 text-lightgrey"></i> Đặt bàn
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="product.html">
+                                    <i class="fa-solid fa-utensils pr-2 text-lightgrey"></i> Loại sản
+                                    phẩm
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-burger pr-2 text-lightgrey"></i> Sản phẩm
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-bell pr-2 text-lightgrey"></i> Thông báo
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-database pr-2 text-lightgrey"></i> Thống kê
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-user pr-2 text-lightgrey"></i> Danh sách
+                                    nhân viên
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-gear pr-2 text-lightgrey"></i> Cài đặt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 p-0 d-none d-lg-block">
                 <div id="sidebar" class="border-right">
                     <header>
                         <a href="index.html"><img src="assets/img/logo.svg"></a>
@@ -31,12 +105,12 @@
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
                             <a href="table.html">
-                                <span class="icon-dashboard active"></span>
+                                <span class="icon-dashboard"></span>
                             </a>
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
                             <a href="order.html">
-                                <span class="icon-order"></span>
+                                <span class="icon-order active"></span>
                             </a>
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
@@ -68,32 +142,39 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-8 pl-0">
-                <div class="row mt-3">
-                    <div class="col-2">
-                        <a href="index.html">
-                            <p class="logo"><span class="span">Resto</span><span class="text">Man</span></p>
-                        </a>
-                    </div>
-                    <div class="col-7 mr-3">
-                        <div class="input-group mb-4 border rounded-pill p-1">
-                            <input type="search" placeholder="Tìm kiếm?" class="form-control bg-none border-0"
-                                style="padding: .375rem .75rem;">
-                            <div class="input-group-append border-0">
-                                <button type="button" class="btn btn-link"><img src="assets/img/union.svg"></button>
+            <div class="col-12 col-lg-8 pl-lg-0">
+                <div class="d-none d-lg-block">
+                    <div class="row mt-3">
+                        <div class="col-2">
+                            <a href="index.html">
+                                <p class="logo"><span class="span">Resto</span><span class="text">Man</span></p>
+                            </a>
+                        </div>
+                        <div class="col-8">
+                            <div class="input-group mb-4 border rounded-pill p-1">
+                                <input type="search" placeholder="Tìm kiếm?" class="form-control bg-none border-0"
+                                    style="padding: .375rem .75rem;">
+                                <div class="input-group-append border-0">
+                                    <button type="button" class="btn btn-link"><img src="assets/img/union.svg"></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-2">
-                        <a href="javascript:;">
-                            <img class="bg-main rounded-circle ml-5 p-2" src="assets/img/notification.svg" />
-                        </a>
+                        <div class="col-1">
+                            <a href="javascript:;">
+                                <img class="bg-main rounded-circle ml-5 p-2" src="assets/img/notification.svg" />
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="list-group overflow-auto product mt-5">
+                <div class="d-block d-lg-none">
+                    <div class="my-3">
+                        <b class="h5">Bàn ăn</b>
+                    </div>
+                </div>
+                <div class="list-group overflow-auto ntable mt-3 mt-lg-5">
                     <div class="row m-0 px-2">
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -103,7 +184,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -113,7 +194,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -123,7 +204,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -133,7 +214,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -143,7 +224,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -153,7 +234,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -163,7 +244,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -173,7 +254,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -183,7 +264,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -193,7 +274,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -203,7 +284,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -213,7 +294,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -223,7 +304,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -233,7 +314,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -243,7 +324,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -253,7 +334,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -263,7 +344,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -273,7 +354,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -283,7 +364,7 @@
                             </div>
                         </div>
                         <div class="col-2 col-table mb-3">
-                            <div class="card text-center mx-3">
+                            <div class="card text-center mx-0 mx-lg-3">
                                 <a href="javascript:;" class="item-table">
                                     <img class="py-3 w-50 d-block mx-auto" src="assets/img/table.svg">
                                     <div class="card-body border-top py-2">
@@ -295,9 +376,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 p-3 border-left">
-                <div class="d-flex justify-content-center my-3">
-                    <b class="h5">Đơn hàng từ mã QR</b>
+            <div class="col-12 col-lg-3 p-3 border-left">
+                <div class="d-block d-lg-none">
+                    <div class="my-3">
+                        <b class="h5">Đơn hàng từ mã QR</b>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block">
+                    <div class="d-flex justify-content-center my-3">
+                        <b class="h5">Đơn hàng từ mã QR</b>
+                    </div>
                 </div>
                 <div class="row my-3">
                     <div class="col-12">
@@ -309,7 +397,7 @@
                                             <a href="javascript:;" data-toggle="modal" data-target="#bill">
                                                 <div class="row">
                                                     <div class="col-7">
-                                                        <h6 class="font-weight-bold">Đơn hàng #20231</h6>
+                                                        <h6 class="font-weight-bold mb-2 mb-lg-0">Đơn hàng #20231</h6>
                                                         <span class="text-muted mr-5">19:10</span>
                                                         <span class="text-muted">Bàn: 1</span>
                                                     </div>
@@ -327,7 +415,7 @@
                                             <a href="javascript:;">
                                                 <div class="row">
                                                     <div class="col-7">
-                                                        <h6 class="font-weight-bold">Đơn hàng #20232</h6>
+                                                        <h6 class="font-weight-bold mb-2 mb-lg-0">Đơn hàng #20232</h6>
                                                         <span class="text-muted mr-5">20:05</span>
                                                         <span class="text-muted">Bàn: 2</span>
                                                     </div>
@@ -345,7 +433,7 @@
                                             <a href="javascript:;">
                                                 <div class="row">
                                                     <div class="col-7">
-                                                        <h6 class="font-weight-bold">Đơn hàng #20233</h6>
+                                                        <h6 class="font-weight-bold mb-2 mb-lg-0">Đơn hàng #20233</h6>
                                                         <span class="text-muted mr-5">20:40</span>
                                                         <span class="text-muted">Bàn: 3</span>
                                                     </div>

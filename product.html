@@ -18,7 +18,81 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1 p-0">
+            <div class="col-2 d-flex justify-content-center align-items-center d-block d-lg-none">
+                <a href="index_mb.html">
+                    <img src="assets/img/logo.svg" width="32">
+                </a>
+            </div>
+            <div class="col-7 mt-3 d-block d-lg-none">
+                <div class="input-group mb-4 border rounded-pill px-1">
+                    <input type="search" placeholder="Tìm kiếm?" class="form-control bg-none border-0"
+                        style="padding: .375rem .75rem;">
+                    <div class="input-group-append border-0">
+                        <button class="btn btn-link"><img src="assets/img/search.svg" width="15"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 mt-3 pl-0 d-block d-lg-none">
+                <a href="cart_mb.html">
+                    <img class="ml-2 float-left" src="assets/img/uil_cart.svg" />
+                    <div class="cart-num px-1 d-flex justify-content-center align-items-center">2</div>
+                </a>
+            </div>
+            <div class="col-1 d-flex align-items-center ml-n4 d-block d-lg-none">
+                <a id="menu-toggle" data-toggle="dropdown">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </a>
+                <div class="dropdown-menu d-none"></div>
+                <div id="wrapper">
+                    <div id="sidebar-wrapper" class="border-top-right">
+                        <ul class="sidebar-nav">
+                            <li class="h6">
+                                <a href="index_mb.html">
+                                    <i class="fa-solid fa-house pr-2 text-lightgrey"></i> Trang chủ
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="table.html">
+                                    <i class="fa-solid fa-clipboard pr-2 text-lightgrey"></i> Đặt bàn
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="product.html">
+                                    <i class="fa-solid fa-utensils pr-2 text-lightgrey"></i> Loại sản
+                                    phẩm
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-burger pr-2 text-lightgrey"></i> Sản phẩm
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-bell pr-2 text-lightgrey"></i> Thông báo
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-database pr-2 text-lightgrey"></i> Thống kê
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-user pr-2 text-lightgrey"></i> Danh sách
+                                    nhân viên
+                                </a>
+                            </li>
+                            <li class="h6">
+                                <a href="javascript:;">
+                                    <i class="fa-solid fa-gear pr-2 text-lightgrey"></i> Cài đặt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 p-0 d-none d-lg-block">
                 <div id="sidebar" class="border-right">
                     <header>
                         <a href="index.html"><img src="assets/img/logo.svg"></a>
@@ -36,12 +110,12 @@
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
                             <a href="order.html">
-                                <span class="icon-order"></span>
+                                <span class="icon-order active"></span>
                             </a>
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
                             <a href="product.html">
-                                <span class="icon-product active"></span>
+                                <span class="icon-product"></span>
                             </a>
                         </li>
                         <li class="list-group-item border-0 pt-6 mt-5">
@@ -68,57 +142,70 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-11 mt-5 pl-0 pr-4">
+            <div class="col-12 col-lg-11 mt-3 mt-lg-5 pl-0 pr-lg-4 px-2">
                 <div class="row">
-                    <div class="col-6 mt-2">
+                    <div class="col-7 mt-2">
                         <h2 class="font-weight-bolder">Danh sách sản phẩm</h2>
                     </div>
-                    <div class="col-6 text-right">
-                        <a href="product-add.html" class="btn btn-main p-3">
+                    <div class="col-5 text-right">
+                        <a href="product-add.html" class="btn btn-main p-2 p-lg-3">
                             <h6 class="mb-0 text-white">+ Thêm sản phẩm</h6>
                         </a>
                     </div>
                 </div>
-                <div class="gridtable mt-4">
+                <div class="gridtable table-responsive mt-4">
                     <table class="table table-bordered table-fixed" style="border-radius: 20px;">
                         <thead class="text-muted text-center">
                             <tr>
-                                <th class="font-weight-bolder p-3 pb-4 h5">Sản phẩm</th>
-                                <th class="font-weight-bolder p-3 pb-4 h5">Tình trạng</th>
-                                <th class="font-weight-bolder p-3 pb-4 h5">ID sản phẩm</th>
-                                <th class="font-weight-bolder p-3 pb-4 h5">Số lượng</th>
-                                <th class="font-weight-bolder p-3 pb-4 h5">Giá</th>
-                                <th class="font-weight-bolder p-3 pb-4 h5">Thao tác</th>
+                                <th class="font-weight-bolder align-middle p-3 pb-4 h6">Sản phẩm</th>
+                                <th class="font-weight-bolder align-middle p-3 pb-4 h6">Tình trạng</th>
+                                <th class="font-weight-bolder align-middle p-3 pb-4 h6">ID sản phẩm</th>
+                                <th class="font-weight-bolder align-middle p-3 pb-4 h6">Giá</th>
+                                <th class="font-weight-bolder align-middle p-3 pb-4 h6">Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">78453468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -126,31 +213,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Bison Burgers</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Bison Burgers</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">58453468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -158,31 +259,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Chicken Popeyes</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Chicken Popeyes</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">58553468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -190,31 +305,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">18553468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -222,31 +351,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">12553468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -254,31 +397,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Chicken Popeyes</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Chicken Popeyes</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">72553421</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -286,31 +443,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Bison Burgers</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Bison Burgers</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">82558765</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -318,31 +489,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">48712642</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -350,31 +535,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">22458562</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -382,31 +581,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Bison Burgers</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Bison Burgers</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">94521765</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -414,31 +627,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Chicken Popeyes</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Chicken Popeyes</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">44123421</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -446,31 +673,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Bison Burgers</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Bison Burgers</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">22453468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
@@ -478,31 +719,45 @@
                             </tr>
                             <tr>
                                 <td class="align-middle">
-                                    <img src="assets/img/pexels-rajesh-tp-1633525-1.png" class="img-product p-0">
-                                    <b class="h6 ml-2 font-weight-bolder">Grill Sandwich</b>
+                                    <div class="row px-2">
+                                        <div class="col-4 pl-1 pl-lg-3 pr-0 pr-lg-3">
+                                            <img src="assets/img/pexels-rajesh-tp-1633525-1.png"
+                                                class="img-product p-0">
+                                        </div>
+                                        <div class="col-8 px-0 d-flex align-items-center">
+                                            <div class="ml-2 font-weight-bolder">Grill Sandwich</div>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="text-green font-weight-bolder">Còn hàng</h6>
+                                    <span class="text-green font-weight-bolder">Còn hàng</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">31253468</h6>
+                                    <span class="font-weight-bolder">78453468</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">50</b>
+                                    <span class="font-weight-bolder">$20.00</span>
                                 </td>
                                 <td class="text-center align-middle">
-                                    <h6 class="font-weight-bolder">$20.00</h6>
-                                </td>
-                                <td class="text-center align-middle">
+                                    <div class="d-block d-lg-none">
+                                        <a href="product-edit.html" class="btn btn-light p-0">
+                                            <img src="assets/img/edit-1.svg" width="24px">
+                                        </a>
+                                        <a data-toggle="modal" data-target="#delete" class="btn btn-light p-0">
+                                            <img src="assets/img/delete-1.svg" width="24px">
+                                        </a>
+                                    </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a href="product-edit.html">
-                                                <img src="assets/img/edit-1.svg"><b class="h6 text-green">Sửa</b>
+                                                <img src="assets/img/edit-1.svg" width="30px">
+                                                <b class="h6 text-green">Sửa</b>
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <div class="col d-none d-lg-block">
                                             <a data-toggle="modal" data-target="#delete">
-                                                <img src="assets/img/delete-1.svg"><b class="h6 text-green">Xoá</b>
+                                                <img src="assets/img/delete-1.svg" width="30px">
+                                                <b class="h6 text-green">Xoá</b>
                                             </a>
                                         </div>
                                     </div>
